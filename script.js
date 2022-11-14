@@ -18,6 +18,8 @@ let score = {
 let modalTitleElement = document.querySelector(".modal-title");
 let activeModalBtn = document.querySelector("#active-modal");
 let turnMarkElement = document.querySelector("#turn-mark");
+let redElement = document.querySelector("#score-red");
+let blueElement = document.querySelector("#score-blue");
 
 function choose(id) {
   let boxElement = document.querySelector(`#${id}`);
@@ -79,8 +81,7 @@ function reset() {
     boxElement.style.backgroundColor = "wheat";
     boxElement.disabled = false;
   });
-  let redElement = document.querySelector("#score-red");
   redElement.innerText = score.red;
-  let blueElement = document.querySelector("#score-blue");
   blueElement.innerText = score.blue;
+  turnMarkElement.innerHTML = `<${turn}>${turn}'s turn</${turn}>`
 }
