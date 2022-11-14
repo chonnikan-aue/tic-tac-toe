@@ -1,0 +1,18 @@
+.box {
+  border: black solid 2px;
+  background-color: wheat;
+  height: 150px;
+}
+
+red {
+  color: red;
+}
+
+blue {
+  color: blue;
+}
+
+mark {
+  font-weight: bold;
+  font-size: large;
+}
